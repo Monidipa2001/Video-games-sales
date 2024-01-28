@@ -2,12 +2,14 @@
 This repository contains code and data for analysing and visualising video game sales. The dataset used includes information on various video games, such as sales figures, genres, platforms, and release dates.
 
 **IMPORTING DATA**
+
 import pandas as pd 
 import matplotlib.pyplot as plt
 df=pd.read_csv(r'Video_Game_Sales_as_of_Jan_2017.csv')
 df
 
 **BAR CHART**
+
 import pandas as pd
 import matplotlib.pyplot as plt
 file_path = 'Video_Game_Sales_as_of_Jan_2017.csv'
@@ -25,6 +27,7 @@ plt.tight_layout()
 plt.show()
 
 **LINE CHART**
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -50,6 +53,7 @@ plt.grid(True)
 plt.show()
 
 **SCATTER PLOT**
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -67,6 +71,7 @@ plt.grid(True)
 plt.show()
 
 **PIE CHART**
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -79,6 +84,7 @@ plt.title('Proportion of Total Sales by Product Category')
 plt.show()
 
 **HEATMAP**
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -96,6 +102,7 @@ plt.title('Correlation Heatmap')
 plt.show()
 
 **TREEMAP**
+
 import pandas as pd
 import plotly.express as px
 
@@ -105,6 +112,7 @@ fig = px.treemap(df, path=['Genre'], values='Global_Sales', title='Treemap of Sa
 fig.show()
 
 **BOXPLOT**
+
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -118,6 +126,7 @@ plt.ylabel('Global Sales')
 plt.show()
 
 **BUBBLE CHART**
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -133,6 +142,7 @@ plt.ylabel('EU_Sales')
 plt.show()
 
 **HISTOGRAM**
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -149,6 +159,7 @@ plt.xticks(rotation=90)
 plt.show()
 
 **WORD CLOUD**
+
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 
